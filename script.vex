@@ -1,5 +1,3 @@
-//--- Functions ---
-
 /*
 r = sqrt(x*x + y*y + z*z )
 theta = atan2(sqrt(x*x + y*y) , z)
@@ -9,7 +7,6 @@ newx = r^n * sin(theta*n) * cos(phi*n)
 newy = r^n * sin(theta*n) * sin(phi*n)
 newz = r^n * cos(theta*n)
 */
-
 
 function int Mandel(float x0, y0, z0; int imax){
     float x, y, z, xnew, ynew, znew, n=ch('n'), r, theta, phi;
@@ -41,7 +38,6 @@ function int Mandel(float x0, y0, z0; int imax){
     }
     return(imax);
 }
-
 
 //--- Main ---
 
